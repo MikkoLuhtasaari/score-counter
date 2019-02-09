@@ -32,5 +32,6 @@
   ],
   "devDependencies": {
     "@types/react-router-dom": "^4.3.1"
-  }
+  },
+  "homepage" : "http://MikkoLuhtasaari.github.io/score-counter"
 }
