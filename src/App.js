@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from "react-router-dom";
 import './App.css';
+import LandingPage from './components/LandingPage';
+import TokoRacingLevel from "./components/ToKoRacingLevel";
+import TokoAlokas from "./components/TokoAlokas";
 
-class App extends Component {
-  render() {
-    return (
+export const App = () => {
+  return (
+    <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/toko" component={TokoRacingLevel} />
+        <Route exact path="/toko/alokas" component={TokoAlokas} />
       </div>
-    );
-  }
+    </BrowserRouter>
+  );
 }
 
 export default App;
