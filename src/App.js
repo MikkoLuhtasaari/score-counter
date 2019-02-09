@@ -7,7 +7,7 @@ import TokoAlokas from "./components/TokoAlokas";
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/#">
       <div className="App">
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/toko" component={TokoRacingLevel} />
