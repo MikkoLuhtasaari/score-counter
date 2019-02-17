@@ -27,6 +27,11 @@
   display: flex;
 }
 
+.FlexCenter {
+  display: flex;
+  justify-content: center;
+}
+
 .FlexColumn {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Segment } from "semantic-ui-react";
+import { Header, Segment, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import tokoLevels from "../utils/tokoLevels";
 
@@ -11,7 +11,7 @@ export const TokoRacingLevel = (): JSX.Element => {
         content="Valitse kilpailuluokkasi alla näkyvistä painikkeista"
       />
       <div className="FlexColumn">
-        {tokoLevels.map(level => <Link key={level.title} to={level.link}>{level.title}</Link>)}
+        {tokoLevels.map(level => <Button key={level.title} basic={true}><Link className="FlexCenter" key={level.link} to={level.link}>{level.title}</Link></Button>)}
       </div>
     </Segment>
   );

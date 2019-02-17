@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import './App.css';
 import LandingPage from './components/LandingPage';
@@ -9,7 +9,6 @@ export const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-      <div>testing</div>
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/toko" component={TokoRacingLevel} />
         <Route exact path="/toko/alokas" component={TokoAlokas} />

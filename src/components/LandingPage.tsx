@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Segment } from "semantic-ui-react";
+import { Header, Segment, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import sports from "../utils/sports";
 
@@ -12,7 +12,7 @@ const LandingPage = (): JSX.Element => {
         className="Flex"
       />
       <div className="FlexColumn">
-      {sports.map(sport => <Link className="Flex" key={sport.link} to={sport.link}>{sport.title}</Link>)}
+      {sports.map(sport => <Button key={sport.title} basic={true}><Link className="FlexCenter" key={sport.link} to={sport.link}>{sport.title}</Link></Button>)}
       </div>
     </Segment>
   );
