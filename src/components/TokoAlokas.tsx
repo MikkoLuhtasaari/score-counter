@@ -36,66 +36,74 @@ export const TokoAlokas = () => {
         <Form.Group widths="equal">
           <Form.Field>
             <label>{`${tokoAlokasMoves[0].name} x${tokoAlokasMoves[0].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move0}
               onChange={(e) => setMove0(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[1].name} x${tokoAlokasMoves[1].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move1}
               onChange={(e) => setMove1(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[2].name} x${tokoAlokasMoves[2].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move2}
               onChange={(e) => setMove2(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[3].name} x${tokoAlokasMoves[3].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move3}
               onChange={(e) => setMove3(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[4].name} x${tokoAlokasMoves[4].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move4}
               onChange={(e) => setMove4(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[5].name} x${tokoAlokasMoves[5].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move5}
               onChange={(e) => setMove5(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[6].name} x${tokoAlokasMoves[6].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move6}
               onChange={(e) => setMove6(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
           <Form.Field>
             <label>{`${tokoAlokasMoves[7].name} x${tokoAlokasMoves[7].multiplier}`}</label>
-            <Input
+            <input
               type="number"
               value={move7}
               onChange={(e) => setMove7(e.target.value as any)}
+              className="CenterText"
             />
           </Form.Field>
         </Form.Group>
