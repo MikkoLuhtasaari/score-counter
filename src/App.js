@@ -4,6 +4,9 @@ import './App.css';
 import LandingPage from './components/LandingPage';
 import TokoRacingLevel from "./components/ToKoRacingLevel";
 import TokoAlokas from "./components/TokoAlokas";
+import TokoAvoin from "./components/TokoAvoin";
+import TokoVoittaja from "./components/TokoVoittaja";
+import TokoErikoisvoittaja from "./components/TokoErikoisvoittaja";
 
 export const App = () => {
   return (
@@ -12,6 +15,9 @@ export const App = () => {
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/toko" component={TokoRacingLevel} />
         <Route exact path="/toko/alokas" component={TokoAlokas} />
+        <Route exact path="/toko/avoin" component={TokoAvoin} />
+        <Route exact path="/toko/voittaja" component={TokoVoittaja} />
+        <Route exact path="/toko/erikoisvoittaja" component={TokoErikoisvoittaja} />
       </div>
     </BrowserRouter>
   );
