@@ -2,12 +2,12 @@ export const tokoPrices = [
   {
     "name": "3-palkinto",
     "min": 192,
-    "max": 223
+    "max": 223.5
   },
   {
     "name": "2-palkinto",
     "min": 224,
-    "max": 255
+    "max": 255.5
   },
   {
     "name": "1-palkinto",
