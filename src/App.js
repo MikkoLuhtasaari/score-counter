@@ -7,6 +7,7 @@ import TokoAlokas from "./components/TokoAlokas";
 import TokoAvoin from "./components/TokoAvoin";
 import TokoVoittaja from "./components/TokoVoittaja";
 import TokoErikoisvoittaja from "./components/TokoErikoisvoittaja";
+import Info from "./components/Info";
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <Route exact path="/toko/avoin" component={TokoAvoin} />
         <Route exact path="/toko/voittaja" component={TokoVoittaja} />
         <Route exact path="/toko/erikoisvoittaja" component={TokoErikoisvoittaja} />
+        <Route exact path="/info" component={Info} />
       </div>
     </BrowserRouter>
   );

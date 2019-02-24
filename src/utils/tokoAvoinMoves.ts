@@ -16,10 +16,6 @@ export const tokoAvoinMoves = [
     "multiplier": 3
   },
   {
-    "name": "Noutoesineen pitäminen",
-    "multiplier": 2
-  },
-  {
     "name": "Istuminen tai maahanmeno seuraamisen yhteydessä",
     "multiplier": 2
   },

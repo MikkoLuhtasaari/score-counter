@@ -6,13 +6,8 @@ export const sports = [
     "description": "TBD"
   },
   {
-    "title": "Agility",
-    "link": "/agility",
-    "description": "TBD"
-  },
-  {
-    "title": "TBD",
-    "link": "/",
+    "title": "Info",
+    "link": "/info",
     "description": "TBD"
   }
 ]
