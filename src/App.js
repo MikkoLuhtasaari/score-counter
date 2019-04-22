@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
+import { Helmet } from 'react-helmet'
 import './App.css';
 import LandingPage from './components/LandingPage';
 import TokoRacingLevel from "./components/ToKoRacingLevel";
@@ -13,6 +14,12 @@ export const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
+        <Helmet>
+          <title>TOKO pisteet</title>
+          <noscript>
+            Please enable Javascript to run this application.
+          </noscript>
+        </Helmet>
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/toko" component={TokoRacingLevel} />
         <Route exact path="/toko/alokas" component={TokoAlokas} />

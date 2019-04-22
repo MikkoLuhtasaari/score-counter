@@ -25,6 +25,7 @@ const TokoVoittaja = () => {
   } else if (total >= tokoPrices[2].min) {
     price = tokoPrices[2].name;
   }
+
   return (
     <Segment className="FlexColumnCenter">
       <Header

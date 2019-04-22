@@ -8,11 +8,17 @@ const LandingPage = (): JSX.Element => {
     <Segment className="FlexColumnCenter">
       <Header 
         as="h1"
-        content="Valitse lajisi"
+        content="Tervetuloa ToKon pistelaskuriin!"
         className="Flex"
       />
       <div className="FlexColumn">
-      {sports.map(sport => <Button key={sport.title} basic={true}><Link className="FlexCenter" key={sport.link} to={sport.link}>{sport.title}</Link></Button>)}
+      {sports.map(sport => 
+        <Button key={sport.title} basic={true} style={{margin: "0px"}}>
+          <Link className="FlexCenter" key={sport.link} to={sport.link}>
+            {sport.title}
+          </Link>
+        </Button>
+      )}
       </div>
     </Segment>
   );

@@ -11,7 +11,13 @@ export const TokoRacingLevel = (): JSX.Element => {
         content="Valitse kilpailuluokkasi alla näkyvistä painikkeista"
       />
       <div className="FlexColumn">
-        {tokoLevels.map(level => <Button key={level.title} basic={true}><Link className="FlexCenter" key={level.link} to={level.link}>{level.title}</Link></Button>)}
+        {tokoLevels.map(level => 
+          <Button key={level.title} basic={true} style={{margin: "0px"}}>
+            <Link className="FlexCenter" key={level.link} to={level.link}>
+              {level.title}
+            </Link>
+          </Button>
+        )}
       </div>
     </Segment>
   );

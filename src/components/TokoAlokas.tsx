@@ -22,15 +22,8 @@ export const TokoAlokas = () => {
   } else if (total >= tokoAlokasPrices[2].min) {
     price = tokoAlokasPrices[2].name;
   }
- /*
- #b5bcc5
- #ebedf0
- #f5f6f7
- #d2d6dc
- #f9f9f9
- */
   return (
-    <Segment className="FlexColumnCenter" style={{backgroundColor: "#ebedf0"}}>
+    <Segment className="FlexColumnCenter">
       <Header
         as="h1"
         content="ToKo alokasluokan liikkeet"
@@ -44,7 +37,6 @@ export const TokoAlokas = () => {
               value={moves.move0}
               onChange={(e) => setMoves({...moves, move0: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -54,7 +46,6 @@ export const TokoAlokas = () => {
               value={moves.move1}
               onChange={(e) => setMoves({...moves, move1: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -64,7 +55,6 @@ export const TokoAlokas = () => {
               value={moves.move2}
               onChange={(e) => setMoves({...moves, move2: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -74,7 +64,6 @@ export const TokoAlokas = () => {
               value={moves.move3}
               onChange={(e) => setMoves({...moves, move3: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -84,7 +73,6 @@ export const TokoAlokas = () => {
               value={moves.move4}
               onChange={(e) => setMoves({...moves, move4: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -94,7 +82,6 @@ export const TokoAlokas = () => {
               value={moves.move5}
               onChange={(e) => setMoves({...moves, move5: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -104,7 +91,6 @@ export const TokoAlokas = () => {
               value={moves.move6}
               onChange={(e) => setMoves({...moves, move6: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
           <Form.Field>
@@ -114,7 +100,6 @@ export const TokoAlokas = () => {
               value={moves.move7}
               onChange={(e) => setMoves({...moves, move7: e.target.value as any})}
               className="CenterText"
-              style={{backgroundColor: "#f5f6f7"}}
             />
           </Form.Field>
         </Form.Group>
